@@ -1,0 +1,30 @@
+.popup {
+  &__close {
+    &:hover {
+      svg {
+        path {
+          @apply fill-blue-400
+        }
+      }
+    }
+    svg {
+      path {
+        @apply duration-300 transition-colors will-change-[fill]
+      }
+    }
+    @apply cursor-pointer
+  }
+  &__bg {
+    &.active {
+      @apply opacity-50 visible
+    }
+    @apply fixed bg-black w-full h-full top-0 left-0 z-[60] invisible opacity-0 will-change-[opacity,visibility] transition-all
+  }
+  .form {
+    @apply min-w-[335px] md:min-w-full
+  }
+  &.active {
+    @apply opacity-100 visible
+  }
+  @apply invisible opacity-0 will-change-[opacity,visibility] transition-all fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[calc(50%-211px)] max-w-[422px] z-[70]
+}

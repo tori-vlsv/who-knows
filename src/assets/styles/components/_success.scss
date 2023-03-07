@@ -1,0 +1,36 @@
+.success {
+  &-active {
+    @apply opacity-100 visible z-[100]
+  }
+  &__bg {
+    &-active {
+      @apply opacity-100 visible z-[99]
+    }
+    @apply bg-[rgba(91,91,91,0.4)] will-change-[opacity,visibility,z-index] transition-all duration-300 w-full h-full left-0 top-0 fixed -z-[1] invisible opacity-0
+  }
+  &__close {
+    svg {
+      path {
+        @apply duration-300 will-change-[stroke] transition-colors
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          @apply stroke-blue-400
+        }
+      }
+    }
+    @apply cursor-pointer right-4 top-4 md:right-8 md:top-8 absolute
+  }
+  &__text {
+    @apply absolute bottom-10 text-lg leading-6 md:text-2xl md:leading-7 text-gray-300 text-center max-w-[235px] mx-auto md:mx-0 md:max-w-full
+  }
+  #success__alert {
+    svg {
+      @apply w-[200px] h-[200px] max-w-[200px] max-h-[200px]
+    }
+    @apply flex items-center justify-center w-full
+  }
+  @apply will-change-[opacity,visibility] md:right-auto w-[335px] px-[50px] pb-10 -z-[1] invisible opacity-0 pt-[15px] transition-all flex flex-col items-center justify-center left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 fixed bg-white rounded-[10px] h-[308px] md:w-[400px]
+}

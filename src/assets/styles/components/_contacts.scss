@@ -1,0 +1,25 @@
+.contacts {
+  &__wrapper {
+    @apply flex items-start justify-center lg:justify-between
+  }
+  &__image {
+    @apply hidden lg:block
+  }
+  &__bg {
+    img {
+      &:nth-child(1),
+      &:nth-child(2) {
+        @apply absolute
+      }
+      &:nth-child(1) {
+        @apply top-[57px] -left-[135px]
+      }
+      &:nth-child(2) {
+        @apply top-20 -right-[142px]
+      }
+      @apply hidden md:block lg:hidden
+    }
+    @apply max-w-[422px] relative
+  }
+  @apply pt-[21px] md:pt-[45px] lg:pt-[60px]
+}

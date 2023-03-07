@@ -1,0 +1,29 @@
+.info {
+  &__wrapper {
+    @apply grid grid-cols-12 gap-y-4 md:gap-x-5 py-[60px] lg:py-20 md:mt-5
+  }
+  &__block {
+    @apply p-6 lg:p-12 rounded-[20px] border border-gray-400 col-span-12 md:col-span-6  
+  }
+  &__header {
+    img {
+      @apply max-w-[32px] max-h-[32px] w-full lg:max-w-[37px] lg:max-h-[37px]
+    }
+    h3 {
+      @apply ml-6 text-blue-400 text-lg leading-6 md:text-2xl md:leading-8 lg:text-[32px] lg:leading-[42px] font-extrabold
+    }
+    @apply flex items-center
+  }
+  &__text {
+    h4 {
+      @apply text-sm md:text-base leading-[18px] md:leading-5 lg:text-lg lg:leading-6 mt-2 font-semibold
+    }
+    p {
+      span {
+        @apply font-bold
+      }
+      @apply text-sm leading-[18px] md:text-base md:leading-6 lg:text-lg lg:leading-[27px] mt-1 lg:mt-2
+    }
+    @apply mt-5 md:mt-[29px] 
+  }
+}

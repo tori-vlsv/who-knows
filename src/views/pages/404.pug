@@ -1,0 +1,16 @@
+extends ../layouts/master.pug
+
+block title
+  title ктоВкурсе? | 404
+
+block basicSeo
+  meta(name="description" content="It's a 404 page")
+  meta(name="keywords", content="404, page")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json", rel="manifest")
+  meta(name="msapplication-config" content="../browserconfig.xml")
+
+block content
+
+  main

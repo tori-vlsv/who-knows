@@ -1,0 +1,49 @@
+.solution {
+  span {
+    @apply font-bold
+  }
+  &__blocks {
+    @apply grid justify-items-center grid-cols-1 lg:grid-cols-2 gap-y-4 md:gap-y-6 lg:gap-x-[50px] mb-[30px] md:mb-[42px] lg:mb-[70px]
+  }
+  &__block {
+    @apply bg-white rounded-[20px] p-6 md:p-[48px] md:max-w-[680px] md:max-h-[341px] lg:max-w-[560px]
+  }
+  &__row {
+    @apply flex items-center mb-3
+  }
+  &__percent {
+    @apply mr-3 md:mr-6 text-[32px] leading-[42px] md:text-5xl md:leading-[62px] text-blue-400 font-extrabold
+  }
+  &__text {
+    &-sm {
+      @apply text-xs leading-[17px] md:text-sm text-center
+    }
+    &-big {
+      @apply text-xs md:text-xl leading-[26px] mb-4 md:mb-5 lg:mb-[34px]
+    }
+    @apply text-xs leading-[15px] md:text-lg md:leading-[23px]
+  }
+  &__money {
+    @apply text-blue-400 text-4xl leading-[47px] md:text-[64px] md:leading-[83px] font-extrabold mb-4 md:mb-6 lg:mb-[30px]
+  }
+  h2 {
+    @apply text-lg leading-6 md:text-2xl md:leading-[31px] lg:text-4xl lg:leading-[47px] mb-5 md:mb-7 lg:mb-[38px] text-white text-center font-extrabold
+  }
+  &__button {
+    img {
+      @apply max-w-[16px] md:max-w-[20px] max-h-[16px] md:max-h-[20px]
+    }
+    span {
+      @apply text-blue-400 text-sm leading-6 md:text-base mr-2 md:mr-[15px] font-medium
+    }
+    @apply bg-white rounded-[7px] py-2 px-[47px] md:py-[10px] md:px-[50px] lg:py-[13px] lg:px-[60px] mx-auto flex items-center mb-5 lg:mb-[38px] transition-colors duration-300 will-change-[background-color] hover:bg-gray-500
+  }
+  &__check {
+    @apply flex flex-col items-center mx-auto text-white max-w-[227px]
+  }
+  &__number {
+    @apply text-[56px] leading-[73px] font-extrabold lg:mb-[5px]
+  }
+  @apply bg-blue-400 pt-[50px] pb-[30px] md:pt-[92px] md:pb-[50px] lg:pt-[96px] lg:pb-[77px]
+}
+  

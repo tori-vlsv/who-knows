@@ -1,0 +1,28 @@
+extends ./layouts/master.pug
+
+block title
+  title ктоВкурсе? | Главная
+
+block basicSeo
+  meta(name="description" content="It\'s a Main page")
+  meta(name="keywords", content="Main, page")
+
+block manifestBrowserconfigFiles
+  link(href="../manifest.json", rel="manifest")
+  meta(name="msapplication-config" content="../browserconfig.xml")
+
+block content
+
+  main
+    include ./components/hero.pug
+    include ./components/solution.pug
+    include ./components/how-it-works
+    include ./components/info.pug
+    include ./components/applications.pug
+    include ./components/terms.pug
+    include ./components/plan.pug
+    include ./components/contacts.pug
+    include ./components/popup.pug
+    include ./components/success.pug
+    include ./components/error.pug
+

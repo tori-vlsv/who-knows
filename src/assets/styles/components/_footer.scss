@@ -1,0 +1,27 @@
+.footer {
+  &__wrapper {
+    @apply grid grid-cols-12 text-sm leading-[17px] md:text-base md:leading-6 lg:text-lg lg:leading-[27px] font-semibold
+  }
+  &__logo {
+    img {
+      @apply w-full
+    }
+    @apply max-w-[142px] col-span-12
+  }
+  &__nav {
+    @apply col-span-12 md:col-span-9 lg:col-span-8 flex flex-col flex-wrap mt-[11px] lg:mt-[15px] max-h-[99px] md:max-h-[105px]
+  }
+  &__link {
+    a {
+      @apply transition-colors will-change-[color] duration-300 hover:text-blue-400
+    }
+    @apply mt-2 
+  }
+  &__mail {
+    a {
+      @apply border-b border-blue-400 text-blue-400 duration-300 will-change-[color,border-color] transition-colors hover:text-blue-300 hover:border-blue-300 leading-[21px] md:leading-6
+    }
+    @apply col-span-12 md:col-span-3 lg:col-span-4 md:text-right mt-7 md:mt-[19px]
+  }
+  @apply mt-[38px] md:mt-[90px] lg:mt-[106px] pb-[58px]
+}

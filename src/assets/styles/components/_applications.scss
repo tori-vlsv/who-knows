@@ -1,0 +1,25 @@
+.applications {
+  h2 {
+    @apply font-extrabold text-lg leading-[23px] md:text-2xl md:leading-8 lg:text-4xl lg:leading-[46px] text-white
+  }
+  &__items {
+    @apply grid grid-cols-12 lg:flex lg:justify-between mt-[58px] lg:flex-wrap gap-y-[70px] md:gap-y-[105px] lg:gap-0
+  }
+  &__item {
+    img {
+      @apply max-w-[52px] max-h-[52px] w-full
+    }
+    p {
+      @apply mt-5 text-white text-base leading-6 pb-[35px] md:pb-0
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      @apply md:min-h-[194px] lg:min-h-[253px]
+    }
+    &:after {
+      @apply content-[''] absolute bottom-0 left-0 w-20 h-[1px] bg-white
+    }
+    @apply flex flex-col md:min-h-[253px] relative col-span-12 md:col-span-6 lg:col-auto
+  }
+  @apply bg-gray-300 py-10 md:py-[60px] lg:py-20
+}

@@ -1,0 +1,18 @@
+section.contacts#contacts
+  .wrapper
+    .contacts__wrapper 
+      .contacts__image.reveal 
+        img(src="/assets/images/contacts.svg", alt="contacts")
+      .contacts__container
+        .contacts__bg
+          img(src="/assets/images/contacts-mobile-1.svg", alt="contacts-mobile-1")
+          img(src="/assets/images/contacts-mobile-2.svg", alt="contacts-mobile-2")
+        form.form.reveal
+          h2 Получить консультацию
+          input(type="text" required name="name" placeholder="Имя*")
+          input(type="tel" required name="phone" placeholder="Телефон*")
+          input(type="email" name="email" placeholder="Email")
+          button(type="submit") 
+            span Отправить
+            img(src="/assets/images/arrow-right-white.svg", alt="arrow-right-white")
+          p Нажимая на кнопку, вы даете <a href="#" target="_blank">согласие</a> на обработку персональных данных и соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности.</a>

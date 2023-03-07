@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .plan-clip-inner {
+    clip-path: polygon(0% 0%, 89.9% 0%, 99.5% 50%, 89.9% 100%, 0% 100%);
+  }
+  .plan-clip-content {
+    clip-path: polygon(0% 0%, 90% 0%, 99.8% 50%, 90% 100%, 0% 100%);
+  }
+}
+
+/*
+  Main parameters styles
+*/
+@import "./base/fonts";
+@import "./base/typography";
+
+/*
+  Base styles
+*/
+@import "./base/global";
+
+/*
+  Components styles
+*/
+@import "./components/header";
+@import "./components/hero";
+@import "./components/solution";
+@import "./components/how-it-works";
+@import "./components/info";
+@import "./components/applications";
+@import "./components/terms";
+@import "./components/plan";
+@import "./components/form";
+@import "./components/contacts";
+@import "./components/footer";
+@import "./components/popup";
+@import "./components/success";
+@import "./components/error";

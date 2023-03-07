@@ -1,0 +1,47 @@
+html,
+body {
+  @apply h-full text-gray-300
+}
+
+body {
+  @apply font-gilroy
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: dark;
+  &::-webkit-scrollbar {
+    @apply w-2
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-inherit duration-300 transition-colors will-change-[background-color]
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-[6px] border-2 border-solid border-inherit bg-inherit bg-blue-400 duration-300 transition-colors will-change-[border-color]
+  }
+}
+
+.render {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff;
+}
+
+.wrapper {
+  @apply mx-auto container
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

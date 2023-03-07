@@ -1,0 +1,24 @@
+.form {
+  h2 {
+    @apply flex items-center justify-between text-lg leading-[23px] md:text-2xl md:leading-[31px] font-extrabold mb-[5px]
+  }
+  input {
+    @apply py-[15px] text-base leading-[18px] md:py-3 border-b border-gray-600 mt-[22px] appearance-none focus:outline-none active:outline-none
+  }
+  button {
+    img {
+      @apply max-w-[16px] md:max-w-[20px] max-h-[16px] md:max-h-[20px]
+    }
+    span {
+      @apply mr-2 md:mr-[15px] text-white font-medium text-sm md:text-base leading-6
+    }
+    @apply bg-blue-400 mt-[34px] flex items-center justify-center transition-colors will-change-[background-color] duration-300 hover:bg-blue-500 py-2 md:py-3 w-full rounded-[10px]
+  }
+  p {
+    a {
+      @apply text-blue-400 transition-colors border-b border-transparent will-change-[color,border-color] duration-300 hover:text-blue-500 hover:border-blue-500
+    }
+    @apply mt-[29px] text-[10px] leading-[13px]
+  }
+  @apply relative z-[55] max-w-[422px] flex flex-col p-6 md:p-9 rounded-[20px] bg-white shadow-[0_0_20px_rgba(0,0,0,0.1)] border border-gray-500
+}

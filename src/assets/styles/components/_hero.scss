@@ -1,0 +1,47 @@
+.hero {
+  &__cloud {
+    @apply opacity-0
+  }
+  &__bg {
+    svg {
+      @apply absolute bottom-0 left-0 lg:-left-[77px] max-h-[138px] md:max-h-[242px] lg:max-h-full max-w-[200px] md:max-w-[350px] lg:max-w-full
+    }
+    &-line {
+      &-mob {
+        @apply right-[81px] bottom-[113px] block md:hidden
+      }
+      &-tablet {
+        @apply right-[126px] bottom-[126px] hidden md:block lg:hidden
+      }
+      @apply -bottom-[100px] right-[190px] absolute opacity-0 hidden lg:block
+    }
+    &-result {
+      @apply top-[90px] md:-top-[30px] lg:top-[83px] right-0 absolute opacity-0 max-h-[104px] md:max-h-[163px] lg:max-h-full max-w-[103px] md:max-w-[200px] lg:max-w-full
+    }
+  }
+  &__wrapper {
+    @apply flex flex-col justify-between relative z-10
+  }
+  &__content {
+    p {
+      @apply mb-[19px] max-w-[315px] md:mb-[25px] lg:mb-[30px] text-base leading-[21px] font-light
+    }
+    @apply lg:mx-auto flex flex-col items-start max-w-[350px] mb-[162px] md:mb-[195px] lg:mb-[150px]
+  }
+  &__logo {
+    @apply hidden md:flex w-[148px] h-[34px] mb-[17px] md:w-[262px] md:h-[62px] md:mb-[21px] lg:w-[349px] lg:h-[83px] lg:mb-3 md:items-center
+  }
+  &__button {
+    svg {
+      @apply max-w-[16px] md:max-w-[20px] max-h-[16px] md:max-h-[20px]
+    }
+    span {
+      @apply text-white mr-2 md:mr-[15px] text-sm leading-6 md:text-base md:leading-6 font-medium
+    }
+    @apply px-[37px] py-2 md:px-[39px] md:py-[10px] lg:px-[49px] lg:py-[13px] bg-blue-400 flex items-center rounded-[7px] font-light cursor-pointer duration-300 transition-colors hover:bg-blue-300
+  }
+  &__text {
+    @apply text-blue-400 text-base leading-[21px] md:text-2xl lg:text-[32px] lg:leading-[42px] max-w-[302px] self-end text-center font-semibold
+  }
+  @apply mt-[92px] md:mt-[129px] lg:mt-[151px] pb-[50px] md:pb-20 lg:pb-[100px] relative
+}
